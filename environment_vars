@@ -1,0 +1,32 @@
+# Basic app vars
+export FLASK_APP='project'
+export FLASK_DEBUG=1
+export app_name='AppName'
+export app_version='0.1'
+export app_prefix='APP_'
+
+#Basic AWS values
+export AWS_KEY=XXXXXXXXXXXXXXXXXXXXXX
+export AWS_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXX
+export AWS_REGION=eu-west-1
+export AWS_VPC=XXXXXX
+export AWS_SEC_GROUP=XXXXXXXXXXXXXXXXX
+export AWS_SUBNET_1=XXXXXX
+export AWS_SUBNET_2=XXXXXX
+
+#For lambda procesing
+export LAMBDA_NAME_SCRAPER=scraper_lambda
+export HANDLE_SCRAPER=project.scraper.tasks.handle_scraper
+
+export LAMBDA_SEND_MESSAGE=send_message_lambda
+export HANDLE_SEND_MESSAGE=project.user.tasks.
+
+#For SQS procesing
+export AWS_SQS_SCRAPER_NAME=scraper_queue
+export AWS_SQS_USER_SUBCRIBER_NAME=user_subscriber_queue
+
+#For redis proceing
+export REDIS_ENDPOINT=XXXXXXXXXXXXXXXXX
+
+# you decided you type of deploy
+export PRODUCTION_TYPE=[serverless/dockerized]
